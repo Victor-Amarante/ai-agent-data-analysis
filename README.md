@@ -30,23 +30,28 @@ Welcome to **InsightTalk.AI**! This repository houses the code for a cutting-edg
 - Virtual Environment Tool (e.g., `venv` or `conda`)  
 - Internet connection for API-based voice recognition.  
 
-### **Installation**  
-1. Clone the repository:  
-  ```bash
-  git clone https://github.com/Victor-Amarante/ai-agent-data-analysis.git
-  cd ai-agent-data-analysis
+### **Installation**
 
-2. Set up a virtual environment (optional, but recommended):
-  ```bash
-  python3 -m venv venv
-  source venv/bin/activate
-  venv\Scripts\activate
+#### 1. Clone the repository:  
+```bash
+git clone https://github.com/Victor-Amarante/ai-agent-data-analysis.git
+cd ai-agent-data-analysis
+```
 
-3. Install dependencies:
-  ```bash
-  pip install -r requirements.txt
+#### 2. Set up a virtual environment (optional, but recommended):
+```bash
+python3 -m venv venv
+source venv/bin/activate
+venv\Scripts\activate
+```
 
-4. Run the main script:
-  ```bash
-  cd src/
-  python3 main.py
+#### 3. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+#### 4. Run the main script:
+```bash
+cd src/
+python3 main.py
+```
