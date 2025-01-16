@@ -39,8 +39,8 @@ Welcome to **InsightTalk.AI**! This repository houses the code for a cutting-edg
 2. Set up a virtual environment (optional, but recommended):
   ```bash
   python3 -m venv venv
-  source venv/bin/activate  # On Linux/Mac
-  venv\Scripts\activate     # On Windows
+  source venv/bin/activate
+  venv\Scripts\activate
 
 3. Install dependencies:
   ```bash
