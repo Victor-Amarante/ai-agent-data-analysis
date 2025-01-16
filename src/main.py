@@ -54,7 +54,7 @@ class TalkingLLM():
     if "temp.wav" in os.listdir(): os.remove("temp.wav")
     wav_file = wave.open("test.wav", 'wb')
     wav_file.setnchannels(self.channels)
-    wav_file.setsampwidth(2)  # Corrigido para usar a largura de amostra para int16 diretamente
+    wav_file.setsampwidth(2)
     wav_file.setframerate(self.samplerate)
     wav_file.writeframes(np.array(self.audio_data, dtype=self.dtype))
     wav_file.close()
