@@ -51,8 +51,13 @@ class TalkingLLM():
   
   def save_and_transcribe(self): 
     print("Saving the recording...")
-    if "temp.wav" in os.listdir(): os.remove("temp.wav")
-    wav_file = wave.open("test.wav", 'wb')
+    folder = "audio"
+    if not os.path.exists(folder):
+      os.makedirs(folder)
+    temp_path = os.path.join(folder, "temp.wav")
+    if "temp.wav" in os.listdir(folder): os.remove(temp_path)
+    final_path = os.path.join(folder, "test.wav")
+    wav_file = wave.open(final_path, 'wb')
     wav_file.setnchannels(self.channels)
     wav_file.setsampwidth(2)
     wav_file.setframerate(self.samplerate)
